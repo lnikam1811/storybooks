@@ -1,0 +1,36 @@
+body {
+  background: #a1ffce; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p {
+  margin: 10px 0 !important;
+}
+
+.login-container {
+  width: 400px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.fa-small {
+  font-size: 18px !important;
+}
+
+.btn-float {
+  float: left;
+  margin-right: 10px;
+}
+
+.img-small {
+  width: 180px;
+}
