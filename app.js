@@ -10,6 +10,11 @@ const session = require("express-session")
 const MongoStore = require("connect-mongo")
 const connectDB = require("./config/db")
 
+//Extra security packages
+const helmet = require("helmet")
+const cors = require("cors")
+const xss = require("xss-clean")
+
 //Load config
 dotenv.config({ path: "./config/config.env" })
 
@@ -23,6 +28,10 @@ const app = express()
 //body parser
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
+// extra packages
+app.use(helmet())
+app.use(cors())
+app.use(xss())
 
 //Method Override
 app.use(
